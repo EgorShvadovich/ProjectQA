@@ -70,14 +70,15 @@ namespace ProjectQA
 
             if (userAnswer.Equals(currentQuestion.CorrectAnswer, StringComparison.InvariantCultureIgnoreCase))
             {
-                MessageBox.Show("Correct!");
+                correctAnswersCount++;
+                MessageBox.Show("Правильно");
             }
             else
             {
-                MessageBox.Show($"Wrong! The correct answer is {currentQuestion.CorrectAnswer}");
+                MessageBox.Show($"Не правильно! Правильный ответ:  {currentQuestion.CorrectAnswer}");
             }
             currentQuestionIndex++;
-            correctAnswersCount++;
+            
             if (currentQuestionIndex < questions.Count)
             {
                 currentQuestion = questions[currentQuestionIndex];

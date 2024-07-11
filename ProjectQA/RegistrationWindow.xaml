@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProjectQA"
          WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-         Title="Добавить пользователя" Height="850" Width="350">
+         Title="Добавить пользователя" Height="550" Width="350">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
